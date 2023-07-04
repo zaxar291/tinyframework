@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="38ecccbf-f5c0-4ba3-beac-6cc741e1cd06" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="2RFF1M22CbNbOdfXTW7gaf3GDod" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/xampp/htdocs/DI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\tinyframework" />
+      <recent name="D:\xampp\htdocs\tinyframework\bin\startup" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38ecccbf-f5c0-4ba3-beac-6cc741e1cd06" name="Changes" comment="" />
+      <created>1686837706027</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686837706027</updated>
+      <workItem from="1686837707035" duration="2386000" />
+      <workItem from="1686850072582" duration="2790000" />
+      <workItem from="1686926168343" duration="2170000" />
+      <workItem from="1686936018312" duration="70000" />
+      <workItem from="1686994222448" duration="96000" />
+      <workItem from="1687014574556" duration="8493000" />
+      <workItem from="1687106776191" duration="13352000" />
+      <workItem from="1687269748729" duration="1348000" />
+      <workItem from="1687347285556" duration="3408000" />
+      <workItem from="1687357704859" duration="6102000" />
+      <workItem from="1687432256487" duration="6181000" />
+      <workItem from="1687537842939" duration="3758000" />
+      <workItem from="1687633795337" duration="2814000" />
+      <workItem from="1687715368228" duration="677000" />
+      <workItem from="1687788956174" duration="6031000" />
+      <workItem from="1687810387937" duration="108000" />
+      <workItem from="1687872773515" duration="6777000" />
+      <workItem from="1688030419103" duration="313000" />
+      <workItem from="1688033776460" duration="9403000" />
+      <workItem from="1688383065060" duration="765000" />
+      <workItem from="1688460617227" duration="6329000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

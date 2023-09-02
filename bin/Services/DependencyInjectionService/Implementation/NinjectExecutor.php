@@ -110,7 +110,7 @@ class NinjectExecutor extends BaseInject {
         return true;
     }
     protected function IsCustomParam(string $type) : bool {
-        return in_array( $type, ["string", "?string", "int"] );
+        return in_array( $type, ["string", "?string", "int", "bool"] );
     }
 
     protected function CreateExecutionInstance(string $c, string $m = "") : object {
@@ -181,6 +181,9 @@ class NinjectExecutor extends BaseInject {
         $allowNull = $param->allowsNull();
         $hasDefaultValue = $param->isOptional();
         $value = $this->Select( $this->extraArguments, function(InjectExtraParam $param) use ($type, $name) {
+            if ($param->name == $name) {
+                return true;
+            }
             return $param->name == $name && $param->type == str_ireplace( ["?"], "", $type );
         } );
         if ( is_null( $value ) && !$allowNull && !$hasDefaultValue ) {

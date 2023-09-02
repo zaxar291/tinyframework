@@ -72,6 +72,15 @@ class RequestsListenerCore implements IRequestsListenerCore
                 $this->storage->Set($key, $value);
             }
         }
+        $inputRequest = file_get_contents("php://input");
+        if ( trim( $inputRequest ) !== "" ) {
+            $data = json_decode($inputRequest, true);
+            if ( JSON_ERROR_NONE == json_last_error() ) {
+                foreach ($data as $key => $value) {
+                    $this->storage->Set($key, $value);
+                }
+            }
+        }
         $this->routingConfiguration->ApplyRouter("BaseRouter");
         $this->storage->Set("app.storage.mappings", json_encode([["GET", "Get"], ["GET", "Index"], ["POST", "Post"]]));
     }

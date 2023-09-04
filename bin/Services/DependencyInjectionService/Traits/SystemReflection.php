@@ -122,4 +122,15 @@ trait SystemReflection {
         }
         return $class;
     }
+
+    public function ArrayToClass(array $array, $class) {
+        if ( count( $array ) > 0 ) {
+            foreach ($array as $key => $value) {
+                if ( isset( $class->{$key} ) ) {
+                    $class->{$key} = $value;
+                }
+            }
+        }
+        return $class;
+    }
 }

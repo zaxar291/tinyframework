@@ -75,9 +75,10 @@ class RequestsListenerCore implements IRequestsListenerCore
         $inputRequest = file_get_contents("php://input");
         if ( trim( $inputRequest ) !== "" ) {
             $data = json_decode($inputRequest, true);
+            $this->storage->Set("stream", $inputRequest);
             if ( JSON_ERROR_NONE == json_last_error() ) {
                 foreach ($data as $key => $value) {
-                    $this->storage->Set($key, $value);
+                    $this->storage->Set($key, (gettype($value) == "string" ? $value : json_encode($value)));
                 }
             }
         }

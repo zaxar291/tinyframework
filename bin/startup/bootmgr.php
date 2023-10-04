@@ -3,7 +3,6 @@
 use bin\startup\BootConfiguration;
 use bin\startup\HostLoader;
 
-require "Environment.php";
 require "BootConfiguration.php";
 require "FileType.php";
 require "FileEntityType.php";

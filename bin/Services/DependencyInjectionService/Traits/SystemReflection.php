@@ -54,6 +54,20 @@ trait SystemReflection {
     }
 
     /**
+     * @param string|object $object
+     * @param string $property
+     * @return array
+     */
+    public function GetPropertyComments($object, string $property) : array {
+        $c = new \ReflectionProperty($object, $property);
+        $comments = $c->getDocComment();
+        if ( trim( $comments ) !== "" ) {
+            return array_filter(explode("*", str_ireplace(["/**", "*/"], "", $comments)), fn(string $comments) => trim($comments) !== "");
+        }
+        return [];
+    }
+
+    /**
      * @param string $className
      * @param array $args
      * @return object

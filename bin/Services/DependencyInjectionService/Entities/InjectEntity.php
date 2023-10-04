@@ -3,7 +3,7 @@
 namespace bin\Services\DependencyInjectionService\Entities;
 
 class InjectEntity {
-    public ?string $bindable;
+    public $bindable;
     public ?string $binder;
     public ?string $scope;
 

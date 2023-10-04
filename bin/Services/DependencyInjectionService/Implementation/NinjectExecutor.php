@@ -124,9 +124,12 @@ class NinjectExecutor extends BaseInject {
         }
         $pList = [];
         foreach ($paramsList as $param) {
-            $pList[] = $param->instance;
+            if ( $param->isCustomParam ) {
+                $pList[] = $param->bindable;
+            } else {
+                $pList[] = $param->instance;
+            }
         }
-
         return $this->CreateInstance( $c, $pList );
     }
 
@@ -157,7 +160,6 @@ class NinjectExecutor extends BaseInject {
                         return $instanceType == $i->binder || strpos( $instanceType, $i->binder );
                     });
                     if ( is_null( $executionParam ) ) {
-                        $this->SelectValueByName($param);
                         $customExecutionParam = new InjectEntity(
                             $instanceType,
                             true

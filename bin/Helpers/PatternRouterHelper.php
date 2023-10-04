@@ -147,7 +147,7 @@ class PatternRouterHelper implements IPatternRouterHelper
     }
 
     private function ApplyDefaultMapping() : void {
-        $this->defaultMapping = json_decode( $this->storage->Get($this->storageMappingKey), true );
+        $this->defaultMapping = [["GET", "Get"], ["GET", "Index"], ["POST", "Post"]];
     }
 
     private function SelectSegmentPattern(string $segment) : string {

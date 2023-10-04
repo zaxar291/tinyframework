@@ -35,12 +35,6 @@ class BootConfiguration
     public string $compressedCacheFolderName;
 
     /**
-     * @var Environment
-     * @description sets environment for
-     */
-    public Environment $environment;
-
-    /**
      * @var string
      * @description minimum php version
      */

@@ -1,10 +1,11 @@
 <?php
 
-use bin\Implementation\WebHostBuilder;
+use bin\Implementation\WebCore\WebHost;
 
 define("ROOT", __DIR__);
 
 require "bin/startup/bootmgr.php";
 
-$builder = WebHostBuilder::BuildHost([]);
-$builder->UseStartup("Startup")->Start();
+$builder = WebHost::CreateBuilder([]);
+$builder->UseStartup("Startup")
+    ->Process();

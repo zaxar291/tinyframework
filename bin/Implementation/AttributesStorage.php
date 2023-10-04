@@ -23,7 +23,8 @@ class AttributesStorage implements IAttributesStorage
     {
         $this->attributes[] = new AttributeItem(
             $this->GetAttributeSelector($attribute),
-            $attribute
+            $attribute,
+            []
         );
     }
 
@@ -35,8 +36,10 @@ class AttributesStorage implements IAttributesStorage
                 $selectedAttribute = array_filter( $attributesList, function (ControllerMethodAttribute $controllerAttribute) use ($attribute) {
                     return $controllerAttribute->attributeName == $attribute->selector;
                 } );
-
                 if ( count( $selectedAttribute ) > 0 ) {
+                    foreach ($selectedAttribute as $selectAttribute) {
+                        $attribute->values = array_merge($attribute->values, $selectAttribute->attributeParams);
+                    }
                     $filteredAttributes[] = $attribute;
                 }
 

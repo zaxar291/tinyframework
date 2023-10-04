@@ -59,11 +59,12 @@ class JsonStreamReflectParserMiddleware implements IMiddleware
     public function ProcessType(object $instance, string $jsonKey, $jsonValue) {
         $property = new \ReflectionProperty($instance, $jsonKey);
         $propertyType = $property->getType()->getName();
+        echo $propertyType;
         if ( $propertyType == "string" ) {
             $instance->{$jsonKey} = (string)$jsonValue;
-        } else if ($propertyType == "integer") {
+        } else if ($propertyType == "int") {
             $instance->{$jsonKey} = (int)$jsonValue;
-        } else if ($propertyType == "boolean") {
+        } else if ($propertyType == "bool") {
             $instance->{$jsonKey} = (bool)$jsonValue;
         } else if ($propertyType == "array") {
             $type = $this->SelectArrayType($instance, $jsonKey);
@@ -100,7 +101,7 @@ class JsonStreamReflectParserMiddleware implements IMiddleware
     }
 
     private function IsNotDefaultDataType(string $type) : bool {
-        return !in_array($type, ["string", "integer", "float", "boolean", "object", "null", "resource"]);
+        return !in_array($type, ["string", "int", "float", "bool", "object", "null", "resource"]);
     }
 
     private function SelectArrayType(object $instance, string $field) : string {

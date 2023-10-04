@@ -4,75 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ecccbf-f5c0-4ba3-beac-6cc741e1cd06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Classes/Context.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/Extensions/IExtensions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/Extensions/IMiddlewareExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/Extensions/IRoutingExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/Helpers/IHttpResponseCodesHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/IEnvironment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/IReflectSection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/Middlewares/IMiddleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/Middlewares/IMiddlewareStorage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/Services/IServicesCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/WebCore/IApplication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/WebCore/IErrorPageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/WebCore/IExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/WebCore/IHost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/WebCore/IHostBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Attributes/HttpPostAttribute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Controllers/ErrorPageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Entities/Consts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Exceptions/WebCore/ExtensionNotExecutable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Helpers/HttpResponseCodesHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Implementation/Contexts/HttpContext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Implementation/Environment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Implementation/Extensions/Extensions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Implementation/Extensions/MiddlewareExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Implementation/Extensions/MvcTemplateExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Implementation/WebCore/Application.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Implementation/WebCore/WebHost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Implementation/WebCore/WebHostCore.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Implementation/WebMiddleware/MiddlewareStorage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Middlewares/JsonStreamReflectParserMiddleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Middlewares/RequestMetadataMiddleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Services/ServicesCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Views/Exception.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Start.php" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Abstraction/Classes/BaseStartup.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Abstraction/Classes/BaseStartup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Abstraction/Interfaces/IAttribute.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/IAttribute.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Abstraction/Interfaces/IHostBuilder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Abstraction/Interfaces/IRequestsListenerCore.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/WebCore/IHostCore.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Abstraction/Interfaces/IRouting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Abstraction/Interfaces/IStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Abstraction/Interfaces/IStorage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Attributes/HttpGetAttribute.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Attributes/HttpGetAttribute.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Entities/AttributeItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Entities/AttributeItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Helpers/PatternRouterHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Helpers/PatternRouterHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/AppStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/Storages/AppStorage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/AttributesParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/Extensions/AttributesExtension.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/AttributesStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/AttributesStorage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/BaseRouter.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/MvcRouting/BaseRouter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/PatternRouter.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/MvcRouting/PatternRouter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/RequestBody.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/Storages/RequestBody.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/RequestHeaders.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/Storages/RequestHeaders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/RequestsListenerCore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/Routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/Extensions/RoutingExtension.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/RoutingConfiguration.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/MvcRouting/RoutingConfiguration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/RoutingStateManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/MvcRouting/RoutingStateManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/ServicesConfigurator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Implementation/WebHostBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/WebCore/WebHostBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Services/DependencyInjectionService/Entities/InjectEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Services/DependencyInjectionService/Entities/InjectEntity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Services/DependencyInjectionService/Implementation/NinjectExecutor.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Services/DependencyInjectionService/Implementation/NinjectExecutor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Services/DependencyInjectionService/Traits/SystemReflection.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Services/DependencyInjectionService/Traits/SystemReflection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/startup/BootConfiguration.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/startup/BootConfiguration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/startup/Environment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/startup/HostLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/startup/HostLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/startup/bootmgr.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/startup/bootmgr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="38ecccbf-f5c0-4ba3-beac-6cc741e1cd06" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,19 +21,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/xampp/htdocs/cms&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/xampp/htdocs/tinyCMS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\tinyframework\bin" />
@@ -156,7 +88,7 @@
       <workItem from="1696320988036" duration="204000" />
       <workItem from="1696343288889" duration="11737000" />
       <workItem from="1696413664476" duration="2316000" />
-      <workItem from="1696431303817" duration="3854000" />
+      <workItem from="1696431303817" duration="4386000" />
     </task>
     <servers />
   </component>

@@ -82,7 +82,7 @@ class HostLoader
 
     private function ListAppCoreFiles(string $d) : void {
         if ( is_dir( $d ) ) {
-            $l = array_diff( scandir( $d ), [".", "..", "startup", "index.php", "Data", "Views"] );
+            $l = array_diff( scandir( $d ), [".", "..", "startup", "index.php", "Data", "Views", "templates_c"] );
             if ( count( $l ) > 0 ) {
                 foreach ($l as $i) {
                     if ( is_file( $d . $i ) && stripos($i, ".php") !== false ) {

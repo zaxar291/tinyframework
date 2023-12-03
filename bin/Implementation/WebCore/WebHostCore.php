@@ -45,7 +45,7 @@ class WebHostCore implements IHostCore
                 }
             }
             if ( trim( $this->context->responseBody ) == "" ) {
-                $this->context->responseCode = 204;
+//                $this->context->responseCode = 204;
             }
             if ( count( $this->context->responseHeaders ) > 0 ) {
                 foreach ($this->context->responseHeaders as $responseHeader) {

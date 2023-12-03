@@ -21,22 +21,26 @@ class Startup extends BaseStartup
         $application->AddMvc();
         $application->UseRouting();
         $application->MapEndpoints(function(IRoutingConfiguration $mapper) {
-            $mapper->MapRoute(new Route(
-                "defaultMapping",
-                "{lang?}/{controller}/{action?}"
-            ));
+//            $mapper->MapRoute(new Route(
+//                "defaultMapping",
+//                "{lang?}/{controller}/{action?}"
+//            ));
             $mapper->MapRoute(new Route(
                 "testWithNewws",
-                "test/{id}"
+                "admin/{controller=Admin}/{action?}"
             ));
-            $mapper->MapRoute(new Route(
-                "testWithNewwsL",
-                "{lang?}/test/{id}"
-            ));
-            $mapper->MapRoute(new Route(
-                "homePage",
-                "{lang?}/{controller=Main}"
-            ));
+//            $mapper->MapRoute(new Route(
+//                "testWithNewws",
+//                "test/{id}"
+//            ));
+//            $mapper->MapRoute(new Route(
+//                "testWithNewwsL",
+//                "{lang?}/test/{id}"
+//            ));
+//            $mapper->MapRoute(new Route(
+//                "homePage",
+//                "{lang?}/{controller=Main}"
+//            ));
         });
         $application->UseRequestBodyParsing();
     }

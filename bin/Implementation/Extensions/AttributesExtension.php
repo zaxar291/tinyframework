@@ -68,7 +68,7 @@ class AttributesExtension implements IExtension
     }
 
     private function IsParsableType(string $type) : bool {
-        return in_array($type, ["string", "bool", "integer", "float"]);
+        return in_array($type, ["string", "bool", "integer", "float", "int"]);
     }
 
     private function FormatValue(string $type, $value) {

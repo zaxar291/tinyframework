@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ecccbf-f5c0-4ba3-beac-6cc741e1cd06" name="Changes" comment="" />
+    <list default="true" id="38ecccbf-f5c0-4ba3-beac-6cc741e1cd06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Controllers/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Helpers/PatternRouterHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Helpers/PatternRouterHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Implementation/MvcRouting/PatternRouter.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/MvcRouting/PatternRouter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Implementation/WebCore/WebHostCore.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Implementation/WebCore/WebHostCore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,24 +26,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2RFF1M22CbNbOdfXTW7gaf3GDod" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/xampp/htdocs/tinyCMS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/xampp/htdocs/tinyCMS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\tinyframework\bin" />
@@ -89,6 +103,9 @@
       <workItem from="1696343288889" duration="11737000" />
       <workItem from="1696413664476" duration="2316000" />
       <workItem from="1696431303817" duration="4386000" />
+      <workItem from="1700154984795" duration="3645000" />
+      <workItem from="1700490721102" duration="2229000" />
+      <workItem from="1700568766324" duration="6000" />
     </task>
     <servers />
   </component>

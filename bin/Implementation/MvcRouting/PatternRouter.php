@@ -68,6 +68,16 @@ class PatternRouter implements IRouter
                                         ));
                                     } else {
                                         $this->patternRouterHelper->SetItemToStorage($routeSegment->segmentTemplate, $matchedPartFromUrl);
+                                        $controllerItem = $this->controllers->GetController($matchedPartFromUrl);
+                                        if ( !is_null( $controllerItem ) ) {
+                                            $this->routingState->UpdateState(new CurrentRouteState(
+                                                $route->pattern,
+                                                get_class( $this ),
+                                                true,
+                                                $controllerItem->controllerFullName,
+                                                (!isset( $urlSegments[$routeSegmentIndex + 1] )) ? $this->patternRouterHelper->TryGetControllerMethodByDefaultMapping($controllerItem) : $urlSegments[$routeSegmentIndex + 1]
+                                            ));
+                                        }
                                     }
                                 } else {
                                     $this->patternRouterHelper->SetItemToStorage($routeSegment->segmentTemplate, $matchedPartFromUrl);
@@ -112,5 +122,6 @@ class PatternRouter implements IRouter
                 }
             }
         }
+        print_r($this->routingState->GetCurrentState());
     }
 }

@@ -126,8 +126,9 @@ class PatternRouterHelper implements IPatternRouterHelper
     }
 
     private function GetByMethodMapping(string $method) : string {
+        $requestType = $this->requestBody->GetRequestItem("REQUEST_METHOD");
         foreach ($this->defaultMapping as $value) {
-            if ($value[1] == $method) {
+            if ($value[1] == $method && (!is_null($requestType) && strtolower(trim( $this->requestBody->GetRequestItem("REQUEST_METHOD")->value )) == strtolower( $method ))) {
                 return $value[1];
             }
         }
@@ -147,7 +148,7 @@ class PatternRouterHelper implements IPatternRouterHelper
     }
 
     private function ApplyDefaultMapping() : void {
-        $this->defaultMapping = [["GET", "Get"], ["GET", "Index"], ["POST", "Post"]];
+        $this->defaultMapping = [["GET", "Get"], ["POST", "Post"], ["PATCH", "Patch"], ["DELETE", "Delete"]];
     }
 
     private function SelectSegmentPattern(string $segment) : string {

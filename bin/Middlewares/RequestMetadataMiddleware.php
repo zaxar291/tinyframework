@@ -61,7 +61,7 @@ class RequestMetadataMiddleware implements IMiddleware
     public function GetAndMapRequestBody() : string {
         if ( is_array( $_REQUEST ) && count( $_REQUEST ) > 0 ) {
             foreach ($_REQUEST as $key => $value) {
-                $this->storage->Set($key, $value);
+                $this->storage->Set($key, $this->ParseValueByType($value));
             }
         }
         if ( !isset( $_REQUEST ) || count( $_REQUEST ) == 0 ) {
@@ -71,7 +71,7 @@ class RequestMetadataMiddleware implements IMiddleware
                 $this->storage->Set(Consts::$StorageStream, $inputRequest);
                 if ( JSON_ERROR_NONE == json_last_error() ) {
                     foreach ($data as $key => $value) {
-                        $this->storage->Set($key, (gettype($value) == "string" ? $value : json_encode($value)));
+                        $this->storage->Set($key, $value);
                     }
                 }
                 return $inputRequest;
@@ -79,5 +79,13 @@ class RequestMetadataMiddleware implements IMiddleware
         }
         $this->storage->Set("app.storage.mappings", json_encode([["GET", "Get"], ["GET", "Index"], ["POST", "Post"]]));
         return "";
+    }
+
+    public function ParseValueByType($value) {
+        if ( $value == "true" || $value == "false" ) {
+            return $value == "true";
+        }
+
+        return $value;
     }
 }

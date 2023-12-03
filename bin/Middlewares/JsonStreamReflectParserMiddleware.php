@@ -28,7 +28,7 @@ class JsonStreamReflectParserMiddleware implements IMiddleware
         if ( !$state->isFound ) return $context->Reject(404);
 
         $stream = $this->storage->Get(Consts::$StorageStream);
-        if ( trim( $stream ) !== "" ) {
+        if ( trim( $stream ) !== "" && !isset( $_FILES ) ) {
             $jsonData = json_decode( $stream );
             if ( json_last_error() !== JSON_ERROR_NONE ) {
                 throw new \Exception("Failed to decode request stream, request stream string is: " . $stream);
